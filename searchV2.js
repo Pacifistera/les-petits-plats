@@ -14,16 +14,6 @@ export class SearchV2 {
       const searchValue = e.target.value.toLowerCase();
 
       if (searchValue.length > 3) {
-        // // const filteredRecipes = this.originalRecipes.filter((recipe) => {
-        //   return (
-        //     recipe.name.toLowerCase().includes(searchValue) ||
-        //     recipe.ingredients.some((ingredient) =>
-        //       ingredient.ingredient.toLowerCase().includes(searchValue)
-        //     ) ||
-        //     recipe.description.toLowerCase().includes(searchValue)
-        //   );
-        // });
-
         const newFilteredRecipes = [];
 
         for (let i = 0; i < this.originalRecipes.length; i++) {
@@ -39,9 +29,7 @@ export class SearchV2 {
             newFilteredRecipes.push(this.originalRecipes[i]);
           }
         }
-
-        console.log('filteredRecipes', newFilteredRecipes);
-
+        filtres.userSearch = searchValue;
         filtres.recipes = newFilteredRecipes;
 
         filtres.filterRecipes();

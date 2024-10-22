@@ -1,5 +1,5 @@
 import { recipesData } from './api/recipes.js';
-import { Search } from './search.js';
+import { SearchV2 as Search } from './searchV2.js';
 
 class RecipeApp {
   constructor() {

@@ -32,7 +32,6 @@ export class Search {
       }
 
       if (searchValue.length === 0) {
-        console.log('pas de recherche', this.originalRecipes);
         filtres.recipes = this.originalRecipes;
         filtres.renderFilter();
       }
