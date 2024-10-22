@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Petits Plats</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img class="logo" src="./assets/Logo.png" alt="Logo Les Petits Plats" />
+        <h1>
+          CHERCHEZ PARMI PLUS DE 1500 RECETTES DU QUOTIDIEN,SIMPLES ET
+          DÉLICIEUSES
+        </h1>
+        <div class="search-container">
+          <label class="search-label" for="searchBar"
+            >Rechercher une recette</label
+          >
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Rechercher une recette..."
+          />
+          <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+      <img
+        class="header-image"
+        src="assets/header.jfif"
+        alt="Les Petits Plats"
+      />
+    </header>
+
+    <main class="main-container">
+      <aside class="filters"></aside>
+      <section id="recipes">
+        <!-- Les recettes seront ajoutées ici par JavaScript -->
+      </section>
+    </main>
+
+    <script type="module" src="appNew.js" defer></script>
+  </body>
+</html>
