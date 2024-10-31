@@ -14,6 +14,7 @@ class RecipeApp {
     // recherche une recette par son nom ou par un ingredient ou par la description
     const search = new Search(this.recipes);
     search.init();
+    debugger;
   }
 }
 
